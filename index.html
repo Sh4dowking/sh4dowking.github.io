@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexandru Chirila | CS Student & Developer</title>
+    <title>Alexandru Chirila</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -45,6 +45,13 @@
         overflow-x: hidden;
       }
       
+      /* Desktop Scaling: 25% larger on screens >= 1024px */
+      @media (min-width: 1024px) {
+        html {
+          font-size: 125%;
+        }
+      }
+
       /* Base Glass Panel */
       .glass-panel {
         background: rgba(30, 41, 59, 0.4);
@@ -54,7 +61,7 @@
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
       }
 
-      /* Hover Card Effect - Used for Experience, Projects, Skills */
+      /* Hover Card Effect */
       .hover-card {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -75,15 +82,15 @@
   <script type="importmap">
 {
   "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
     "react/": "https://aistudiocdn.com/react@^19.2.1/",
     "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CYjQdNCA.js"></script>
+  <script type="module" crossorigin src="/assets/index-Bb9KmtxA.js"></script>
 </head>
   <body>
     <div id="root"></div>
